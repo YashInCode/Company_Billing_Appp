@@ -106,3 +106,46 @@ section {
   border-bottom: 0.5px solid rgb(227, 225, 225);
   padding: 10px 25px 10px;
 }
+
+
+/* Pop up for new job/docket */
+
+
+#popup{
+  background-color: rgb(233, 239, 255, 0.5); /* Semi-transparent background */
+  
+  width: 80%;
+  margin:15px;
+  min-height: 660px;
+  border-radius:20px ;
+  position:fixed;
+  backdrop-filter: blur(50px);
+  inset:15px 140px 20px;
+}
+#popup h3{
+  padding:10px ;
+}
+#nav{
+  display:grid;
+  grid-template-columns:90% 10%;
+}
+#remove{
+  border: none;
+  background: none;
+  color: grey;
+  font-size: 20px;
+  padding: 0px;
+  margin-right: 0px;
+}
+.input{
+  background-color: white;
+  border-radius: 20px;
+  margin:10px;
+}
+.input tr td{
+  padding: 15px;
+  width:8%;
+}
+.heading{
+  padding: 10px;
+}

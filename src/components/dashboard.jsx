@@ -1,8 +1,7 @@
-import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import { faTable, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
-import Myclient from "./client";
 
 const Dashboard = () => {
     return (
@@ -14,7 +13,10 @@ const Dashboard = () => {
                         <FontAwesomeIcon icon={faTable} className="font" /> Dashboard
                     </p>
                     <p className="ms-3 text-light mt-4">
-                        <Link to="/client" className="toplink"><FontAwesomeIcon icon={faUsers} className="font" /> Clients </Link>
+                        <Link to="/client" className="toplink"><FontAwesomeIcon icon={faUsers} className="font" /> CRM </Link>
+                    </p>
+                    <p className="ms-3 text-light mt-4">
+                        <Link to="/invoice" className="toplink"><FontAwesomeIcon icon={faFileInvoice} className="font" /> Invoice </Link>
                     </p>
                 </div>
                 <div className="col-xl-10" id="backcolor">

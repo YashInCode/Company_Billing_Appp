@@ -33,14 +33,14 @@ const Myclient = () => {
                     <nav id="navigation">
                     <h4 className="mt-3"> Jobs/Docket </h4>
                     <div >
-                    <button className=" btn btn-primary rounded" onClick={()=>setnewJob(true)}> <FontAwesomeIcon icon={faPlus} /> New Job/Docket </button>
+                    <button className=" btn btn-primary rounded" onClick={()=>setnewJob(true)}> <FontAwesomeIcon icon={faPlus} /> Create Invoice </button>
                     {newJob && <NewJob onClose={()=>setnewJob(false)}/>}
-                    <button className=" btn btn-secondary rounded"> <FontAwesomeIcon icon={faPlus} /> Import </button>
+                    <button className=" btn btn-secondary rounded"> <FontAwesomeIcon icon={faPlus} /> Download </button>
                     
                     </div>
                     </nav>
                     <section className="bg-light">
-                        <Datalist/>
+                        
                     </section>
                 </div>
             </div>
